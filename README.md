@@ -85,3 +85,6 @@ To add a new question (for example "marital status"), add it to `FIELDS` in `sch
 ## Ideas for next steps
 
 Translate scheme names and benefits, add a WhatsApp or SMS front end, add deadline alerts, add a "why am I not eligible" explainer, and load the scheme list from a JSON file or API so non-developers can update it.
+
+
+Auto-deploy test
