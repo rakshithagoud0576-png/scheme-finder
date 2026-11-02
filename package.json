@@ -1,0 +1,14 @@
+{
+  "name": "scheme-finder",
+  "version": "1.0.0",
+  "description": "Government scheme eligibility finder: answer a few questions, see schemes you qualify for, nearly qualify for, and what documents you need.",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test.js"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "MIT"
+}

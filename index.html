@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scheme Finder</title>
+  <meta name="description" content="Find government schemes you may qualify for, see what you narrowly miss, and what documents to prepare.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6f4a'/%3E%3Cpath d='M9 17l5 5 10-12' fill='none' stroke='white' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-inner">
+      <h1 id="title">Scheme Finder</h1>
+      <div class="langs" role="group" aria-label="Language" id="langs"></div>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <section class="panel" aria-labelledby="about-h">
+      <p id="tagline" class="lead"></p>
+      <p id="privacy" class="note"></p>
+
+      <div class="panel-head">
+        <h2 id="about-h"></h2>
+        <button type="button" id="reset" class="link-btn"></button>
+      </div>
+      <div id="nextHint" class="hint" hidden></div>
+      <form id="form" autocomplete="off" novalidate></form>
+    </section>
+
+    <section class="results" aria-live="polite">
+      <p id="sample" class="banner"></p>
+      <div class="filters">
+        <label for="topicFilter" id="topicLabel"></label>
+        <select id="topicFilter"></select>
+      </div>
+      <div id="groups"></div>
+    </section>
+  </main>
+
+  <script src="i18n.js"></script>
+  <script src="schemes.js"></script>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
